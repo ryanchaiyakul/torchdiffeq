@@ -58,7 +58,6 @@ class FixedGridODESolver(metaclass=abc.ABCMeta):
         unused_kwargs.pop('norm', None)
         _handle_unused_kwargs(self, unused_kwargs)
         del unused_kwargs
-
         self.func = func
         self.y0 = y0
         self.dtype = y0.dtype
